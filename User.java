@@ -5,8 +5,8 @@ public abstract class User implements HasMenu, Serializable {
     private String PIN; // PIN used to log in
     private static final long serialVersionUID = 1L;
 
-    // Use the same Scanner as the account menus.
-    protected java.util.Scanner input = CheckingAccount.input;
+    // use the same scanner as the account menus
+    protected static java.util.Scanner input = CheckingAccount.input;
 
     public boolean login() {
         System.out.print("User name: ");

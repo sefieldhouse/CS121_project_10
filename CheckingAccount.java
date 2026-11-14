@@ -1,6 +1,7 @@
 import java.util.Scanner;
+import java.io.Serializable;
 
-public class CheckingAccount implements HasMenu {
+public class CheckingAccount implements HasMenu, Serializable {
     private double balance; // amount of money in the account
     public static Scanner input = new Scanner(System.in); // shared input for the menus
 

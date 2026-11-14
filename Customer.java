@@ -57,6 +57,14 @@ public class Customer extends User {
 	// System.out.println("Current pin: " + getPIN()); // I addeed this to make sure the pin is actually changing correctly 
     } // end changePin
 
+    public CheckingAccount getChecking() {
+        return checking;
+    } // end getChecking
+
+    public SavingsAccount getSavings() {
+        return savings;
+    } // end getSavings
+
     public String getReport() {
         return "Customer: " + getUserName() + "\nChecking: "
             + checking.getBalanceString() + "\nSavings: " + savings.getBalanceString();
